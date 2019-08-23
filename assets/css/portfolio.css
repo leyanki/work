@@ -1,0 +1,289 @@
+/* 1.1. banner
+===============================================*/
+.banner{
+    height: 90%;
+    font-size:1rem;
+}
+.banner-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding-bottom: 2rem;
+}
+.banner-title span{
+    color:yellow;
+    /* font-size:   */
+}
+.banner-btn{
+    text-align: center;
+    display: block;
+    padding: 1.3rem 1rem;
+    font-size: .8rem ;
+    margin-top:2.5rem; 
+    width: 37%;
+    color: #FFF;
+    background: #E11235;
+}
+.banner-image{
+    position: relative;
+    top: 20vh;
+    box-sizing: border-box;
+    padding-left:3rem;
+}
+.banner-text h6,.banner-text span{
+    padding:1.5rem 0rem;
+     font-size: .8rem;
+}
+.banner-h-text{
+    display:flex;
+    padding: 0;
+    margin:0;
+    justify-content: center;
+    align-items: center;
+} 
+.banner-h-text *{
+    flex-basis: 40%;
+    padding:1.5rem 0rem;
+    margin:2rem .5rem;
+    font-size: .8rem;
+}
+.banner-text span{
+     font-size: .8rem;
+}
+.banner-content{
+    flex-basis: 70%;
+    margin:3rem auto;
+    padding: 3rem auto
+}
+.section-title{
+    background:white;
+    width: 100%; 
+    color:#4F4F4F;
+    font-weight: bold;
+    padding:2.5rem 0rem;
+    
+}
+
+/** media queries**/
+@media screen and (max-width:1278px){
+   
+}
+@media screen and (max-width:1075px){
+    
+}
+
+
+@media screen and (max-width:992px){
+    .banner-content{
+        flex-basis: 90%;
+    }
+}
+@media screen and (max-width:692px){
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-content{
+        flex-basis: 100%;
+    }
+    /* .banner-text span{
+        font-size: .7rem;
+    }
+   
+    .banner-btn{        
+        width:65%;
+    } */
+}
+@media screen and (max-width:624px){
+    .banner-h-text *{
+        flex-basis: 45%;
+    }
+    /* .banner{
+        text-align: center;
+    }
+   
+    .banner-btn{
+        width: 50%;
+        margin: .4rem auto;
+    }
+    .section-title{
+        padding:2rem 0rem;
+    } */
+}
+@media screen and (max-width:553px){ 
+    .banner-h-text *{
+        flex-basis: 80%;    
+        margin: 0rem;
+    }
+    .banner-h-text .banner-btn{
+        margin-top:2.5rem; 
+    }   
+}
+@media screen and (max-width:473px){
+    .banner-title{
+        font-size: 1.5rem;
+    }
+    /* .banner-text span{
+        font-size: .rem;
+   } */
+}
+
+/* 1.4 side bar
+============================================*/
+
+/* .sidebar-nav{
+position: sticky;
+top: 0%;
+left:0;
+z-index:1;
+} */
+.sidebar-nav .w-90{
+width: 91.85%;
+}
+/* .sidebar-nav .sidebar-content,.sidebar-nav .side-match-link{
+display: inline-block;   
+margin: 0;
+padding: 0;
+} */
+.sidebar-nav .sidebar-content{
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+.sidebar-links{
+flex-basis: 27%;
+}
+.sidebar-link-content{
+display: inline-block;
+position: sticky;
+width: 100%;
+top: 0;
+padding-left: 0rem;
+list-style: none;
+font-size: .8rem;
+z-index: 10;
+}
+.side-match-link{
+display: inline-block;
+width: 70%;
+}
+.side-match-elem{
+display: flex;
+padding-top: 4rem;
+z-index:1
+}
+
+.sidebar-link{
+width: 100%;
+vertical-align: center;
+padding: 1.7rem 1rem;
+box-sizing: border-box;
+margin: 0rem 0rem 3rem 0rem;
+border-radius: 5px;
+background-color: #FFF;
+box-shadow: 0 3px 9px 0 rgba(35,39,47,0.1);
+transition: .5s background ease;
+}
+.sidebar-link-content .active{
+background-color: #E11235;
+color:white;
+}   
+.side{
+padding-right: 0 !important;
+margin-right: 0 !important;
+}
+
+
+.side-match-link h4{
+padding-bottom:3rem; 
+}
+.side-match-link p{
+line-height: 2.5;
+font-size:.85rem;
+padding-left: 0rem;
+}
+.side-match-link img {
+height: 78%;
+position: relative;
+
+border-radius: 5px;
+
+}
+
+@media screen and (max-width:1127px){
+.side-match-link img {
+    height: 60%;
+    width: 60%;
+    border-radius: 5px;
+}
+.side-match-elem div{
+    flex-basis: 55%;
+}
+
+
+}
+@media screen and (max-width:992px){
+.sidebar-nav .sidebar-content {
+    display: block;
+}
+.sidebar-links {
+    display: inline-block;
+    /* flex-basis: 27%; */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.side-match-link {
+    display: inline-block;
+    width: 100%;
+}
+.sidebar-link {
+    width:45%;
+    margin: .5rem;
+    padding: .5rem;
+    font-size: .7rem;
+    margin-right:1rem;
+    display: inline-block;
+}
+}
+
+@media screen and (max-width:574px){
+.side-match-link img {
+  display: none;
+}
+.side-match-elem div{
+    width: 100%;
+    flex-basis: 100%;
+}
+}
+
+/* 1.6 Overlay 
+===============================================*/
+.overlay{
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background: white;
+    opacity: 1  ;
+    z-index: 0;
+}
+.overlay .overlay-content, .overlay .overlay-img, .overlay .overlay-color{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.overlay-img{
+    background-image: url(../images/Group.png);
+    background-repeat:  no-repeat; 
+    background-size: cover;
+    z-index:1;
+}
+.overlay-color{
+    background-color: #121733;
+    z-index: 2;
+    opacity: .7;
+}
+.overlay-content{
+    z-index: 3
+}

@@ -1,0 +1,459 @@
+
+
+/*==================================================
+1. Component
+====================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+.body{
+    margin: 0;
+    padding: 0;
+    background-color: #121733;
+    font-size:1rem;
+    color:#FFF; 
+    font-family: poppins;
+    /* line-height: 1rem; */
+}
+
+/* 1.1 Header
+====================================================*/
+.w-85{
+    width: 85%;
+}
+.header,.header-link,.header-link li,.header-button,.header-logo .header-logo{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+
+.header{
+    background-color: rgba(0,0,0,0.35);
+    justify-content: space-between;
+    border-bottom: 1.2px solid white;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    transition:  3s all ease;
+}
+.header-logo{
+    background: red;
+    
+}
+.header-logo .logo {
+    width: 89px;
+    height: 20%;
+    padding: .9rem 1.5rem .5rem 1.5rem;
+}
+
+.header-link{
+    box-sizing: border-box;
+    padding: 0rem 3rem;
+    flex-basis: 50%;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.header-link .nav-item{
+   padding: 0rem 1rem;
+}
+
+.header-button{
+    flex-basis: 20%;
+    justify-content: right;
+    align-self: stretch;
+
+}
+
+.header-button .faw-btn{
+    padding: 1rem !important;
+    font-size: 1rem;
+    line-height: 17px;
+}
+.header-button .header-login{
+    flex-basis: 45% !important;
+    background: #FFF;
+    color: #E11235;
+    font-family: "Poppins SemiBold";
+    
+}
+
+.header-button .header-register{
+    flex-basis: 55% !important;
+    background: #E11235;
+    color: #FFF;
+    font-family: "Poppins SemiBold";
+}
+.header-button .faw-btn{
+    cursor: pointer;
+    align-items: stretch !important;
+    border: none;       
+    padding: .9rem;
+
+}
+.burger{
+    display: none;
+    /* order: 1; */
+}
+.burger .logo{
+    cursor: pointer;
+    width: 89px;
+    height: 20%;
+    padding: .9rem 1.5rem .5rem 1.5rem;   
+}
+
+/** @media queries **/
+
+
+@media screen and (max-width:1086px){
+    .header-link{
+        padding: 0rem 0rem;
+     }
+}
+
+@media screen and (max-width:894px){
+
+    .header-button{
+        flex-basis: 25%;
+        justify-content: right;
+        align-self: stretch;
+
+    }
+    .header-link .nav-item{
+        padding: 0rem .1rem;
+     }
+
+     
+
+}
+
+@media screen and (max-width:664px){
+    .burger{
+        display: flex;
+        
+    }
+    .header-link,.header-button{
+        display: none;
+    }
+
+    .header-link li{
+        margin-top: 1rem;
+    }
+
+    .header-button{
+        flex-basis: 100% !important;
+        margin: 1rem 0rem;
+    }
+    .header-link{
+        flex-basis: 100% !important;
+    }
+    .header-button,.header-link {
+        justify-content: center !important;
+        align-self:center !important;
+    }
+    .header-button .faw-btn{
+        flex-basis: 25% !important;
+    }
+    .header-link .nav-item{
+        flex-basis: 100%;
+        justify-content: center !important;
+        
+    }
+}
+
+/* 1.3 Section 
+===============================================*/   
+
+.section{
+    width: 100%;
+    background: #FBFBFB;
+    color:#4F4F4F;
+    size:1rem;
+    padding: 3rem 0rem;
+}
+.section-card{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-content: space-between; */
+}
+.card-elem .card-image img{
+    /* padding-right:3rem; */
+
+}
+.section-card .card-elem{
+    flex-basis: 30%;
+    box-sizing: border-box;
+    padding-bottom:3rem;
+    padding-top: 1rem; 
+}
+.card-elem-title{
+    text-align: center;
+    padding: 1rem;
+    font-size: .9rem;
+    font-weight: 900;
+    /* padding-right:3rem; */
+}
+.section-card-btn{
+    display: inline-block;
+    margin: auto;
+    padding: 1rem 1.8rem;
+    font-size:.8rem;
+    color:white !important;
+    background: #4f4f4f;
+    text-decoration: none;
+}
+/** media queries**/
+
+@media screen and (max-width:991px){
+    .section-card .card-elem{
+        flex-basis: 33%;
+    }
+}
+@media screen and (max-width:767px){
+    .section-card .card-elem{
+        flex-basis: 45%;
+        padding-bottom:1.5rem;
+    }
+    .hide_on_tablet{
+        display: none;
+    }
+}
+@media screen and (max-width:567px){
+    .section-card .card-elem{
+        flex-basis: 100%;
+        padding-bottom:1.5rem;
+    }
+    
+}
+
+.section2{
+    width: 100%;
+    background: #C8C8C8;
+    size:1rem;
+    padding: 3rem 0rem;
+}
+.section2-title{
+    width: 90%;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #333;
+    font-family: "Poppins Black";
+    /* font-size: 32px; */
+    line-height: 3.5rem;
+}
+.section-btn{
+    display: inline-block;
+    margin: auto;
+    padding: 1.3rem 1.5rem;
+    font-size:.8rem;
+    color:white !important;
+    background:#E11235;
+    text-decoration: none; 
+}
+/** media querie**/
+@media screen and (max-width:991px){
+    .section2-title{
+        font-size: 2.2rem;
+        line-height: 3.1rem;
+    }
+}
+
+@media screen and (max-width:767px){
+    .section2-title{
+        width: 100%;
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+    }
+}
+@media screen and (max-width:540px){
+    .section2-title{
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .section-btn{
+        padding: .8rem 1rem;  
+    }
+}
+
+.section4{
+    background:#4F4F4F;
+    color: #FFF;
+    padding: 1rem 0rem;
+}
+
+.section4-content{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.section4-content .text{
+    font-size:1.25rem;
+    font-weight: 900;
+}
+.section4-content .button{
+    display: inline-block;
+    padding: 1.3rem 3rem;
+    font-size:.8rem;
+    color:white !important;
+    background:#E11235;
+    text-decoration: none;
+}
+
+/** media queries **/
+@media screen and (max-width:767px){
+    .section4-content .text{
+        font-size:.9rem;
+        font-weight: 900;
+    }
+    .section4-content .button{
+      
+        padding: 1.3rem 1rem;
+        
+    } 
+}
+@media screen and (max-width:545px){
+    .section4-content{
+        justify-content:center; 
+    }
+    .section4-content .text,.section4-content .button{
+        padding-bottom: 1rem;
+    }
+    
+
+}
+
+
+
+
+
+/* 1.5. footer
+==============================================*/
+.footer{
+    background: #FBFBFB;
+    padding: 3rem 0rem 1.5rem 0rem;
+    color: #4F4F4F;
+    font-size: .85rem;
+}
+.footer-link div img{
+    height: 37px;
+    width: 36px;
+}
+.footer-link{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-nav{
+    flex-basis: 25%;
+    /* border:1px solid black; */
+}
+.footer-link div{
+    flex-basis: 15%;
+    /* border:1px solid black; */
+}
+.footer-nav li{
+    padding:.3rem 0rem; 
+    list-style: none;
+}
+
+.footer-link .footer-nav-link{
+    text-decoration: none;
+    color:#4F4F4F;
+}
+
+.footer .last{
+    flex-basis: 30%;
+    align-self: flex-start;
+}
+
+.footer-end{
+    background:#FFF;
+    padding: 3rem 0rem 1rem 0rem;
+    color:#4F4F4F;
+    font-size:.85rem; 
+}   
+.footer-end span{
+    font-weight: 700;
+}   
+.footer-end .red{
+    display: inline-block;
+    color:#E11235
+}
+
+.footer-end .green{
+    display: inline-block;
+    color:#1D8254;
+}
+.footer-nav-title{
+    font-weight: 900;
+}
+.footer-end a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+/** media queries **/
+
+@media screen and (max-width:981px){
+   
+    
+    .footer-nav{
+        flex-basis: 30%;
+        /* border:1px solid black; */
+    }
+    .footer .last{
+        flex-basis: 30%;
+    }
+    .footer-img{
+        flex-basis: 100% !important;   
+        text-align: center;
+        padding-bottom:2rem;
+    }
+}
+@media screen and (max-width:676px){
+    .footer-link div{
+        display: none;
+        /* border:1px solid black; */
+    }
+    .footer-nav{
+        flex-basis: 40%;
+        /* border:1px solid black; */
+    }
+    .footer .last{
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width:425px){
+    .footer-link{
+        justify-content: center; 
+    }
+    .footer-link div{
+        display: none;
+        padding:.5rem 0rem; 
+        /* border:1px solid black; */
+    }
+    .footer-nav{
+        flex-basis: 100%;
+        padding:.5rem 0rem; 
+        text-align: center;
+        box-shadow: 0 3px 6px 0 rgba(0,0,0,0.05);
+
+        /* border:1px solid black; */
+    }
+    .footer .last{
+        flex-basis: 100%;
+        padding:.5rem 0rem; 
+    }
+}
